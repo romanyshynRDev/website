@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  domains: ["cdn.prod.website-files.com"],
+  domains: ["*"],
 };
 
 export default nextConfig;
