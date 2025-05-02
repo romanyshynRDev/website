@@ -29,12 +29,7 @@ function SkillsSection() {
         {skills.map((skill) => (
           <div key={skill.name} className={styles.skillItem}>
             <div className={styles.iconContainer}>
-            <Image
-                src={skill.icon}
-                alt={skill.name}
-                width={40}
-                height={40}
-              />
+              <Image src={skill.icon} alt={skill.name} width={40} height={40} />
             </div>
             <p className={styles.skillName}>{skill.name}</p>
           </div>

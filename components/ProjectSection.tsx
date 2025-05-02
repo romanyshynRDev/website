@@ -16,14 +16,15 @@ const ProjectCard = ({
   return (
     <div className={styles.projectCard}>
       <a href={linkUrl} target="_blank" rel="noopener noreferrer">
-      <Image
-            src={imageUrl}
-            alt={title}
-            width={600}
-            height={400}
-            className={styles.projectImage}
-            style={{ objectFit: "cover" }}
-          />      </a>
+        <Image
+          src={imageUrl}
+          alt={title}
+          width={600}
+          height={400}
+          className={styles.projectImage}
+          style={{ objectFit: "cover" }}
+        />{" "}
+      </a>
       <div className={styles.projectContent}>
         <h3 className={styles.projectTitle}>{title}</h3>
         <p className={styles.projectDescription}>{description}</p>
