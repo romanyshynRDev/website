@@ -17,6 +17,7 @@ const skills = [
   { name: "Docker", icon: "/images/skills_icons/Docker_icon.svg" },
 ];
 
+
 function SkillsSection() {
   return (
     <section className={styles.skillsSection}>
