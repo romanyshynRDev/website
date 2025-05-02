@@ -12,6 +12,7 @@ const ProjectCard = ({
   imageUrl: string;
   linkUrl: string;
 }) => {
+  const customStyle = "Deep Sea Gutsby" === title ? "cover" : "contain";
   return (
     <div className={styles.projectCard}>
       <a href={linkUrl} target="_blank" rel="noopener noreferrer">
@@ -21,7 +22,7 @@ const ProjectCard = ({
           width={600}
           height={400}
           className={styles.projectImage}
-          style={{ objectFit: "cover" }}
+          style={{ objectFit: customStyle }}
         />
       </a>
       <div className={styles.projectContent}>
