@@ -9,7 +9,7 @@ export const metadata = {
   title: "Roman Romanyshyn - Senior Full Stack Developer Portfolio",
   description: "Personal website portfolio Senior Full Stack developer.",
   icons: {
-    icon: [{ url: "/favicon_rocket.ico", type: "image/x-icon" }],
+    icon: [{ url: "/logo.png", type: "image/x-icon" }],
   },
 };
 
