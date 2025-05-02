@@ -1,0 +1,121 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  z-index: 16;
+}
+
+.logoImage {
+  height: 50px;
+  width: auto;
+}
+
+.navMenu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  margin-left: 30px;
+}
+
+.navLink {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+  position: relative;
+}
+
+.navLink:hover {
+  color: #007bff;
+  transform: translateY(-2px);
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 20;
+  color: #333;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+
+  .navMenu {
+    flex-direction: column;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50vh;
+    background: white;
+    z-index: 15;
+    padding-top: 100px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+
+  .navMenu.active {
+    display: flex;
+  }
+
+  .navItem {
+    margin: 20px 0;
+  }
+
+  .navLink {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .burger {
+    position: relative;
+    z-index: 20;
+  }
+}

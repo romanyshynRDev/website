@@ -1,0 +1,37 @@
+.footer {
+  background-color: #f8f9fa; /* Світлий фон для підвалу */
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #dee2e6; /* Тонка лінія-роздільник зверху */
+}
+
+.socialLinks {
+  margin-bottom: 15px;
+}
+
+.socialLinks a {
+  color: #007bff; /* Синій колір для посилань */
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.socialLinks a:hover {
+  color: #0056b3; /* Темніший синій при наведенні */
+  text-decoration: underline; /* Підкреслення при наведенні */
+}
+
+.copyright {
+  font-size: 0.9rem;
+  color: #6c757d; /* Сірий колір для тексту копірайту */
+}
+
+/* Адаптивні стилі для мобільних */
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px;
+  }
+
+  .socialLinks a {
+    margin: 0 5px; /* Зменшуємо відступи між посиланнями на мобільних */
+  }
+}
