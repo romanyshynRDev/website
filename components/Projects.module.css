@@ -22,10 +22,15 @@
 
 .projectsContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   margin-top: 20px;
-  padding: 0px 120px;
+  justify-content: center;
+  justify-items: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
 }
 
 .projectCard {
@@ -115,5 +120,12 @@
 
   .projectCard {
     margin-bottom: 20px;
+  }
+  .projectsContainer {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px; */
+    padding: 0px 20px;
   }
 }
