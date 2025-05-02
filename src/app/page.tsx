@@ -7,10 +7,9 @@ import ProjectsSection from "@/components/ProjectSection";
 export default function Home() {
   return (
     <div>
-      <HeroSection id="home" />
+      <HeroSection />
       <SkillsSection />
       <AboutSection id="about" />
-
       <ProjectsSection />
       <ContactSection id="contact" />
     </div>

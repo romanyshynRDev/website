@@ -1,8 +1,9 @@
- "use client";
-import React from 'react';
-import { motion } from 'framer-motion';
-import styles from './Navigation.module.css';
+"use client";
+import React from "react";
+import { motion } from "framer-motion";
+import styles from "./Navigation.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navigation = () => {
   return (
@@ -14,22 +15,36 @@ const Navigation = () => {
     >
       <div className={styles.navContainer}>
         <div className={styles.logo}>
-            <Link href="/">
-              <img src="/images/logo_5.png" alt="Logo" className={styles.logoImage}/>
-            </Link>
+          <Link href="/">
+            <Image
+              src="/images/logo_5.png"
+              alt="Logo"
+              width={120}
+              height={40}
+              className={styles.logoImage}
+            />
+          </Link>
         </div>
         <ul className={styles.navMenu}>
           <li className={styles.navItem}>
-            <Link href="/" className={styles.navLink}>Home</Link>
+            <Link href="/" className={styles.navLink}>
+              Home
+            </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href="#about" className={styles.navLink}>About</Link>
+            <Link href="#about" className={styles.navLink}>
+              About
+            </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href="#projects" className={styles.navLink}>Projects</Link>
+            <Link href="#projects" className={styles.navLink}>
+              Projects
+            </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href="#contact" className={styles.navLink}>Contact</Link>
+            <Link href="#contact" className={styles.navLink}>
+              Contact
+            </Link>
           </li>
         </ul>
       </div>

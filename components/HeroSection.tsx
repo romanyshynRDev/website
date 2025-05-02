@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./HeroSection.module.css";
 
-function HeroSection(props:{ id: string }) {
+function HeroSection() {
   return (
     <section className={styles.hero}>
       <div className={styles.heroLeft}>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Tag } from "lucide-react";
 import styles from "./SkillsSection.module.css";
+import Image from "next/image";
 
 const skills = [
   { name: "HTML5", icon: "/images/skills_icons/html5_icon.svg" },
@@ -17,7 +18,6 @@ const skills = [
   { name: "Docker", icon: "/images/skills_icons/Docker_icon.svg" },
 ];
 
-
 function SkillsSection() {
   return (
     <section className={styles.skillsSection}>
@@ -29,7 +29,12 @@ function SkillsSection() {
         {skills.map((skill) => (
           <div key={skill.name} className={styles.skillItem}>
             <div className={styles.iconContainer}>
-              <img src={skill.icon} alt={skill.name} />
+            <Image
+                src={skill.icon}
+                alt={skill.name}
+                width={40}
+                height={40}
+              />
             </div>
             <p className={styles.skillName}>{skill.name}</p>
           </div>

@@ -1,0 +1,56 @@
+name: SimplePipeline
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  lintTest:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone Repository
+        uses: actions/checkout@v2
+
+      - name: Install Dependencies
+        run: |
+          echo "Installing dependencies..."
+          npm install
+
+      - name: Run Linting
+        run: |
+          echo "Running linting..."
+          npm run lint
+
+      - name: Run TypeScript Check
+        run: |
+          echo "Running TypeScript type check..."
+          npx tsc --noEmit
+
+      - name: Run Prettier Check
+        run: |
+          echo "Checking code format..."
+          npx prettier . --check
+
+      - name: Fix Code Style with Prettier
+        run: |
+          echo "Fixing code style..."
+          npx prettier . --write  # This fixes the style issues
+
+      - name: Build Project
+        run: |
+          echo "Building project..."
+          npm run build
+
+      - name: Audit Dependencies
+        run: |
+          echo "Checking for vulnerabilities..."
+          npm audit --audit-level=moderate
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v2
+        with:
+          languages: javascript
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v2

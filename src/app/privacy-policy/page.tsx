@@ -1,5 +1,5 @@
-import React from 'react';
-import styles from './PrivacyPolicy.module.css'; // Create a CSS module for this
+import React from "react";
+import styles from "./PrivacyPolicy.module.css"; // Create a CSS module for this
 
 const PrivacyPolicy = () => {
   return (
@@ -8,8 +8,8 @@ const PrivacyPolicy = () => {
 
       <h2 className={styles.sectionTitle}>1. Introduction</h2>
       <p className={styles.paragraph}>
-        Welcome to my website. This Privacy Policy outlines how I collect,
-        use, and protect your personal information when you use my website.
+        Welcome to my website. This Privacy Policy outlines how I collect, use,
+        and protect your personal information when you use my website.
       </p>
 
       <h2 className={styles.sectionTitle}>2. Information We Collect</h2>
@@ -38,12 +38,8 @@ const PrivacyPolicy = () => {
           To respond to your inquiries and provide you with the information or
           services you request.
         </li>
-        <li>
-          To improve and optimize the website.
-        </li>
-        <li>
-          To comply with legal obligations.
-        </li>
+        <li>To improve and optimize the website.</li>
+        <li>To comply with legal obligations.</li>
       </ul>
 
       <h2 className={styles.sectionTitle}>4. Sharing Your Information</h2>
@@ -52,16 +48,12 @@ const PrivacyPolicy = () => {
         the following circumstances:
       </p>
       <ul className={styles.list}>
-        <li>
-          With your consent.
-        </li>
+        <li>With your consent.</li>
         <li>
           With service providers who assist me in operating the website (e.g.,
           hosting providers).
         </li>
-        <li>
-          When required by law.
-        </li>
+        <li>When required by law.</li>
       </ul>
 
       <h2 className={styles.sectionTitle}>5. Data Security</h2>
@@ -73,23 +65,18 @@ const PrivacyPolicy = () => {
       </p>
 
       <h2 className={styles.sectionTitle}>6. Your Rights</h2>
-      <p className={styles.paragraph}>
-        You may have the right to:
-      </p>
+      <p className={styles.paragraph}>You may have the right to:</p>
       <ul className={styles.list}>
-        <li>
-          Access the personal information I hold about you.
-        </li>
+        <li>Access the personal information I hold about you.</li>
         <li>
           Request the correction of any inaccurate or incomplete information.
         </li>
-        <li>
-          Request the deletion of your personal information.
-        </li>
+        <li>Request the deletion of your personal information.</li>
       </ul>
-       <p className={styles.paragraph}>
-            To exercise these rights, please contact me using the contact information provided on the website.
-        </p>
+      <p className={styles.paragraph}>
+        To exercise these rights, please contact me using the contact
+        information provided on the website.
+      </p>
 
       <h2 className={styles.sectionTitle}>7. Changes to This Privacy Policy</h2>
       <p className={styles.paragraph}>

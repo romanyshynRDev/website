@@ -1,7 +1,7 @@
 .section {
   border-bottom: 1px solid #ddd;
   background-color: #fff;
-  padding-bottom: 80px ;
+  padding-bottom: 80px;
   padding-top: 60px;
 }
 .title {
@@ -31,15 +31,20 @@
 .projectCard {
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 123, 255, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.1),
+    0 0 10px rgba(0, 123, 255, 0.05);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   overflow: hidden;
-
 }
 
 .projectCard:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15), 0 0 15px rgba(0, 123, 255, 0.1);
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.15),
+    0 0 15px rgba(0, 123, 255, 0.1);
 }
 
 .projectImage {
@@ -73,12 +78,15 @@
   color: white;
   text-decoration: none;
   border-radius: 5px;
-  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease,
+    color 0.3s ease;
   position: relative;
 }
 
 .projectLink::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 2px;
@@ -92,9 +100,8 @@
 
 .projectLink:hover {
   background-color: #0056b3;
-  color: #e1e1e1; 
+  color: #e1e1e1;
   text-decoration: none;
-  
 }
 .projectLink:active {
   background-color: #004494;
@@ -104,7 +111,6 @@
 @media (max-width: 768px) {
   .projectsContainer {
     grid-template-columns: 1fr;
-  
   }
 
   .projectCard {

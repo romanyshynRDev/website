@@ -53,17 +53,17 @@ const ContactSection = (props: { id: string }) => {
       } else {
         toast.error("Error sending email");
       }
-    } catch (error: any) {
+    } catch (error: unknown) {
       toast.error(`Error sending email: ${error} `);
     }
   };
 
   return (
-    <section className={styles.contact}  id={props.id}>
+    <section className={styles.contact} id={props.id}>
       <Toaster />
       <h2 className={styles.title}>Contact Me</h2>
       <p className={styles.description}>
-        I'm open to new opportunities, collaborations, and projects. Feel free
+        I am open to new opportunities, collaborations, and projects. Feel free
         to reach out to me to discuss your ideas.
       </p>
       <form className={styles.contactForm} onSubmit={handleSubmit(onSubmit)}>
