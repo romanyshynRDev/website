@@ -6,7 +6,7 @@ import Image from "next/image";
 const skills = [
   { name: "HTML5", icon: "/images/skills_icons/html5_icon.svg" },
   { name: "CSS3", icon: "/images/skills_icons/css_icon.svg" },
-  { name: "React", icon: "/images/skills_icons/react_icon.svg" },
+  { name: "React", icon: "/images/skills_icons/react_icon.png" },
   { name: "Redux", icon: "/images/skills_icons/Redux_icon.svg" },
   { name: "Next.js", icon: "/images/skills_icons/next_icon.svg" },
   { name: "TypeScript", icon: "/images/skills_icons/typescript_icon.svg" },

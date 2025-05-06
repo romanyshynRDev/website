@@ -1,49 +1,46 @@
 .hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  min-height: 100vh;
-  padding: 0px 80px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.heroLeft {
-  flex: 1;
-  max-width: 500px;
-  margin-right: 50px;
+.backgroundImage {
+  object-fit: cover;
+  z-index: 0;
+}
+
+.heroContent {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  color: rgb(0, 0, 0);
+  max-width: 600px;
 }
 
 .title {
   font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 20px;
-  color: #333;
 }
 
-.subtitle {
-  font-size: 1.2rem;
-  color: #555;
-  margin-bottom: 30px;
-}
 
 .tagline {
   font-size: 1.5rem;
   font-style: italic;
-  color: #666;
+  color: #5e5d5d;
   margin-bottom: 40px;
+  font-weight: 600;
 }
-
 .contactButton {
-  padding: 15px 30px;
-  background-color: #007bff;
-  color: white;
+  padding: 0.75rem 1.5rem;
+  background-color: #0070f3;
   border: none;
-  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
   cursor: pointer;
-  font-size: 1.1rem;
-  transition: background-color 0.3s ease;
+  border-radius: 5px;
 }
 .contactButton:active {
   background-color: #004494;
@@ -53,52 +50,4 @@
   background-color: #0056b3;
 }
 
-.heroRight {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.profileImageContainer {
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.profileImage {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 80px 20px;
-  }
-
-  .heroLeft {
-    margin-right: 0;
-    margin-bottom: 40px;
-    max-width: 100%;
-  }
-
-  .title {
-    font-size: 2.5rem;
-  }
-
-  .subtitle {
-    font-size: 1rem;
-  }
-  .tagline {
-    font-size: 1.2rem;
-  }
-
-  .profileImageContainer {
-    width: 300px;
-    height: 300px;
-  }
-}
