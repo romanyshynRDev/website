@@ -1,30 +1,27 @@
+
 import Image from "next/image";
 import styles from "./HeroSection.module.css";
+import Link from "next/link";
 
 function HeroSection() {
   return (
     <section className={styles.hero}>
-      <div className={styles.heroLeft}>
+      <Image
+        src="/images/banner_5.avif"
+        alt="Roman Romanyshyn"
+        fill
+        priority
+        className={styles.backgroundImage}
+      />
+      <div className={styles.heroContent}>
         <h1 className={styles.title}>Senior Full Stack Developer</h1>
-        <p className={styles.subtitle}>
-          Full Stack Developer | Innovator | Problem Solver
-        </p>
+
         <p className={styles.tagline}>
           “Great products connect people — code is just how we get there.”
         </p>
-        <button className={styles.contactButton}>Contact Me</button>
-      </div>
-      <div className={styles.heroRight}>
-        <div className={styles.profileImageContainer}>
-          <Image
-            src="/images/profile.jpg"
-            alt="Roman Romanyshyn"
-            layout="responsive"
-            width={250}
-            height={250}
-            className={styles.profileImage}
-          />
-        </div>
+        <Link href="#contact" passHref>
+          <button className={styles.contactButton}>Contact Me</button>
+        </Link>
       </div>
     </section>
   );
